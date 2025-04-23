@@ -1,0 +1,18 @@
+[package]
+name = "laserbench"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.5.37", features = ["derive"] }
+dotenvy = "0.15.7"
+eyre = "0.6.12"
+futures = "0.3.31"
+tokio = { version = "1.44.2", features = ["fs", "rt-multi-thread"] }
+
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
+
+yellowstone-grpc-client = "6.0.0"
+yellowstone-grpc-proto = "6.0.0"
+
