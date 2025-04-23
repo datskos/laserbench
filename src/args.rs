@@ -16,7 +16,7 @@ pub struct StreamKind {
 #[derive(Debug, Subcommand)]
 pub enum Command {
     /// Record time blocks were received
-    Simulate {
+    Record {
         /// Stream to fetch from (laser or grpc)
         #[command(flatten)]
         kind: StreamKind,

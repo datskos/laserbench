@@ -25,10 +25,10 @@
 3. Run
 
     ```shell
-    ./target/release/laserbench simulate --path grpc.csv --grpc
+    ./target/release/laserbench record --path grpc.csv --grpc
     ```
 
     ```shell
-    ./target/release/laserbench simulate --path laser.csv --laser
+    ./target/release/laserbench record --path laser.csv --laser
     ```
 

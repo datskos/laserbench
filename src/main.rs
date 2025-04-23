@@ -40,7 +40,7 @@ async fn main() -> eyre::Result<()> {
     dotenv().map_err(|e| eyre::eyre!("Could not read .env: {}", e))?;
 
     match app.command {
-        Command::Simulate { kind, path } => {
+        Command::Record { kind, path } => {
             let (url, token) = get_connection_info(kind.laser)?;
             sub_blocks_and_process(url, token, path).await
         }
